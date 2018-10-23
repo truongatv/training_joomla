@@ -1,0 +1,187 @@
+name: Phoca Carousel
+description: Display Phoca Carousel.
+type: particle
+icon: fa-sliders
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable icon menu particles.
+      default: true
+
+    class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    animationSpeed:
+      type: input.text
+      label: Animation Speed
+      description: Set animation speed.
+      placeholder: 600
+      
+    autoplay:
+      type: select.select
+      label: Autoplay
+      description: Enable or disable the Autoplay.
+      default: enable
+      options:
+        enable: Enable
+        disable: Disable
+
+    autoplaySpeed:
+      type: input.text
+      label: Autoplay Speed
+      description: Set the speed of the Autoplay, in milliseconds. It must be greater than the sum of the times of all animations.
+      placeholder: 10000
+
+    nav:
+      type: select.select
+      label: Prev / Next
+      description: Enable or disable the Prev / Next navigation.
+      default: enable
+      options:
+        enable: Enable
+        disable: Disable
+
+    dots:
+      type: select.select
+      label: Dots
+      description: Enable or disable the Dots navigation.
+      default: enable
+      options:
+        enable: Enable
+        disable: Disable
+        
+    height:
+      type: input.text
+      label: Height
+      description: Set height of the slideshow. Will be ignored when Fill Rest Of the Page parameter is enabled.
+      placeholder: '70vh'
+
+    fillRestPage:
+      type: select.select
+      label: Fill Rest Of The Page
+      description: Enable or disable full height. Slideshow fills the rest of the page on large screens.
+      default: enable
+      options:
+        enable: Enable
+        disable: Disable
+        
+    fillRestPageRatio:
+      type: input.text
+      label: Fill Rest Of The Page Ratio (Small screens)
+      description: When filling the rest of page on large screens is enabled, set the ratio between width and height to correct the size on small screens.
+      placeholder: 2
+      
+      
+    backgroundImage:
+      type: input.imagepicker
+      label: Background Image
+      description: Select desired background image. This background image applies to all slides and can be overriden by background image of each slide. 
+
+
+    items:
+      type: collection.list
+      array: true
+      label: Phoca Carousel Items
+      description: Create each Phoca Carousel item to display.
+      value: name
+      ajax: true
+
+      fields:
+        .name:
+          type: input.text
+          
+        .backgroundImage:
+          type: input.imagepicker
+          label: Background Image
+          description: Select desired background image.
+        
+        .title:
+          type: input.text
+          label: Title
+          description: Enter the title.
+        .titleCss:
+          type: textarea.textarea
+          label: Title CSS
+          description: Enter the title CSS.
+        .titleAnimation:
+          type: input.text
+          label: Title Animation
+          description: Enter title animation.
+          placeholder: 'For example: fadeIn'
+          
+        .desc:
+          type: textarea.textarea
+          label: Description
+          description: Enter the description.
+        .descCss:
+          type: textarea.textarea
+          label: Description CSS
+          description: Enter the description CSS.
+        .descAnimation:
+          type: input.text
+          label: Description Animation
+          description: Enter description animation.
+          placeholder: 'For example: bounceInLeft'
+          
+        .buttonTitle:
+          type: input.text
+          label: Button Title
+          description: Enter the button title.
+        .buttonLink:
+          type: input.text
+          label: Button Link
+          description: Enter the button link.
+        .buttonCss:
+          type: textarea.textarea
+          label: Button CSS
+          description: Enter the button CSS.
+        .buttonAnimation:
+          type: input.text
+          label: Button Animation
+          description: Enter button animation.
+          placeholder: 'For example: zoomIn'
+          
+        .image1:
+          type: input.imagepicker
+          label: First Image
+          description: Select the first image.
+        .image1Css:
+          type: textarea.textarea
+          label: First Image CSS 
+          description: Enter first image CSS.
+        .image1SizeCss:
+          type: textarea.textarea
+          label: First Image Size CSS
+          description: Enter first image size CSS.
+        .image1Animation:
+          type: input.text
+          label: First Image Animation
+          description: Enter first image animation.
+          placeholder: 'For example: bounceInDown'
+          
+        .image2:
+          type: input.imagepicker
+          label: Second Image
+          description: Select the second image.
+        .image2Css:
+          type: textarea.textarea
+          label: Second Image CSS 
+          description: Enter second image CSS.
+        .image2SizeCss:
+          type: textarea.textarea
+          label: Second Image Size CSS
+          description: Enter second image size CSS.
+        .image2Animation:
+          type: input.text
+          label: Second Image Animation
+          description: Enter second image animation.
+          placeholder: 'For example: bounceInUp'

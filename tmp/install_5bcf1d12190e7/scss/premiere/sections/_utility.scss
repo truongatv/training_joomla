@@ -1,0 +1,16 @@
+#g-utility {
+    background: $utility-background;
+    color: $utility-text-color;
+    padding: $section-padding 0;
+}
+
+#g-footer a{
+	color: lighten($accent-color-1, 22%);
+}
+
+@media print {
+    #g-utility {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

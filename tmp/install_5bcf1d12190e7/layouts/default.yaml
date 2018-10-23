@@ -1,0 +1,129 @@
+version: 2
+
+preset:
+  image: gantry-admin://images/layouts/default.png
+  name: default
+
+layout:
+  /header/:
+    - [logo 33, position-header 55, position-module 12]
+  /navigation/:
+    - menu
+  /showcase/: {}
+  /maintop/:
+    - position-maintop
+    - position-breadcrumbs
+  /main/:
+    -
+      -
+        'sidebar 25': 
+        - position-position-7
+      -
+        'mainbar 75':
+        - system-messages
+        - system-content
+  
+  /mainbottom/:
+    - position-mainbottom
+  /bottom/: {}
+  /utility/: {}
+  /feature/: {}
+  /subfeature/: {}
+  /footer/:
+    - position-footer
+    - [copyright 30, spacer 30, branding 35, totop 5]
+    - custom
+
+  offcanvas:
+    - mobile-menu
+ 
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  maintop:
+    type: section
+    attributes:
+      boxed: ''
+  sidebar:
+    type: section
+  mainbar:
+    type: section
+  main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  bottom:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+
+content:
+  logo:
+    attributes:
+      image: 'gantry-media://premiere-logo-w.png'
+  position-header:
+    attributes:
+      key: header
+  menu:
+    title: 'Module Position'
+    attributes:
+      key: position-22
+    block:
+      class: ph-main-nav-top-box
+  position-maintop:
+    attributes:
+      key: maintop
+  position-breadcrumbs:
+    title: 'Module Position'
+    attributes:
+      enabled: 1
+      key: breadcrumbs
+  position-position-7:
+    attributes:
+      key: position-7
+  position-mainbottom:
+    attributes:
+      key: mainbottom
+  position-footer:
+    attributes:
+      key: footer
+  copyright:
+    attributes:
+      date:
+        start: now
+      owner: Phoca
+  branding:
+    attributes:
+      content: 'Powered by <a href="https://www.phoca.cz/" title="Phoca" class="g-powered-by" target="_blank">Phoca</a>, <a href="https://www.joomla.org/" title="Joomla!" class="g-powered-by" target="_blank">Joomla!</a> & <a href="http://www.gantry.org/" title="Gantry Framework" class="g-powered-by" target="_blank">Gantry Framework</a>'
+  totop:
+    title: 'To Top'
+    attributes:
+      icon: 'fa fa-chevron-up fa-2x'
+  custom:
+    title: 'Custom HTML'
+    attributes:
+      html: '<div class="disclaimer">Phoca and this site is not affiliated with or endorsed by The Joomla! Project™.<br> Any products and services provided through this site are not supported or warrantied by The Joomla! Project or Open Source Matters, Inc.<br> Use of the Joomla!® name, symbol, logo and related trademarks is permitted under a limited license granted by Open Source Matters, Inc.</div>'

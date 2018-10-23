@@ -1,0 +1,29 @@
+version: 2
+
+preset:
+  image: gantry-admin://images/layouts/offline.png
+
+layout:
+  /header/:
+    - [logo 30, spacer 70]
+
+  /main/:
+    - system-messages
+    - system-content
+
+  /footer/: {}
+  /offcanvas/: {}
+
+structure:
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children 	

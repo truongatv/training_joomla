@@ -1,0 +1,8 @@
+enabled: '1'
+url: ''
+target: _self
+image: 'gantry-theme://images/premiere-logo-w.png'
+link: '1'
+svg: ''
+text: 'Phoca Premiere'
+class: gantry-logo

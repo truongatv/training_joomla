@@ -1,0 +1,37 @@
+name: Phoca Options
+description: Configure Template Options.
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable Template Options.
+      default: true
+
+    phoca_sticky_navbar:
+      type: enable.enable
+      label: Sticky/Affix Navbar
+      description: Leave top menu bar fixed on top when scrolled
+      default: true
+    phoca_load_bootstrap_base_css:
+      type: enable.enable
+      label: Load Bootstrap Base CSS
+      description: Load Bootstrap base CSS library
+      default: true 
+    phoca_load_bootstrap_glyphicons_css:
+      type: enable.enable
+      label: Load Bootstrap Glyphicons CSS
+      description: Load Bootstrap Glyphicons CSS library
+      default: true 
+    phoca_load_bootstrap_base_js:
+      type: enable.enable
+      label: Load Bootstrap Base JS
+      description: Load Bootstrap base Javascript library
+      default: true
+    phoca_load_bootstrap_full_css:
+      type: enable.enable
+      label: Load Bootstrap Full CSS
+      description: Load Bootstrap full CSS library
+      default: false   

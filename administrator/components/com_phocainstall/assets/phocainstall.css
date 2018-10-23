@@ -1,0 +1,142 @@
+div.icon-48-install {
+	background: url('images/icon-48-pi-install.png') no-repeat left;
+}
+
+.phoca-adminform {
+	/*background-color: #fff;*/
+	border: solid 1px #d5d5d5;
+	padding:10px;
+}
+
+/*Temp*/
+.adminform {
+	background-color: #f9f9f9;
+	border: solid 1px #d5d5d5;
+	padding:10px;
+}
+fieldset.adminform {
+	margin: 10px;
+	overflow: hidden;
+}
+
+fieldset.adminform legend {
+	margin: 0;
+	padding: 0;
+}
+
+ul.adminformlist,
+ul.adminformlist li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.adminformlist pre {
+	font-size:1.3em;
+}
+fieldset.adminform textarea {
+	width: 355px;
+}
+fieldset.adminform ul.checklist li {
+	width: 100%;
+	margin: 0;
+	padding:0;
+}
+fieldset.adminform ul.checklist li label {
+	width: auto;
+}
+fieldset.adminform .menu-links label {
+	width:400px;
+}
+fieldset.adminform .menu-links input {
+	margin-top: 1px;
+}
+
+table.adminform {
+	background-color: #fff;
+	border: solid 1px #d5d5d5;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 8px 0 10px 0;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+table.adminform tr.row0 {
+	background-color: #f9f9f9;
+}
+
+table.adminform tr.row1 {
+	background-color: #eeeeee;
+}
+
+table.adminform th {
+	font-size: 1.091em;
+	padding: 6px 2px 4px 4px;
+	text-align: left;
+	height: 25px;
+	color: #000;
+	background-repeat: repeat;
+}
+
+table.adminform td {
+	padding: 5px;
+	text-align: left;
+	font-size: 1.091em;
+}
+
+table.adminform td.filter {
+	text-align: left;
+}
+
+table.adminform td.helpMenu {
+	text-align: right;
+}
+/* -- CONTROL PANEL STYLES ----------------------------- */
+#cpanel div.icon {
+	text-align: center;
+	margin-right: 15px;
+	float: left;
+	margin-bottom: 15px;
+	background-color: #fff;
+}
+
+#cpanel div.icon a {
+	display: block;
+	float: left;
+	border: 1px solid #eaeaea;
+	height: 97px;
+	width: 108px;
+	color: #565656;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+#cpanel div.icon a:hover {
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: #fbfbfb;
+	color: #025A8D;
+}
+
+#cpanel img {
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+#cpanel span {
+	display: block;
+	text-align: center;
+}
+
+div.cpanel-left {
+	width: 54%;
+	float: left;
+}
+
+div.cpanel-right {
+	width: 45%;
+	float: right;
+}

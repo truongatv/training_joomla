@@ -1,0 +1,192 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ gantry.phoca_theme.getParticleCssPath('animate.css') }}" type="text/css" />
+<link rel="stylesheet" href="{{ gantry.phoca_theme.getParticleCssPath('swiper.min.css') }}" type="text/css" />
+ 
+<style>
+{% for item in particle.items %}
+	{% if item.backgroundImage %}
+        #{{ id }} .ph-swiper-slide-box-{{ loop.index }} {
+        	background-image:url({{ url(item.backgroundImage)|e }});
+        	-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+        }
+	{% endif %}
+	
+#{{ id }} .ph-title-{{ loop.index }} {
+{{ item.titleCss }}
+display:none;
+}
+#{{ id }} .ph-description-{{ loop.index }} {
+{{ item.descCss }}
+display:none;
+}
+#{{ id }} .ph-button-{{ loop.index }} {
+{{ item.buttonCss }}
+display:none;
+}
+#{{ id }} .ph-image1-{{ loop.index }} {
+{{ item.image1Css }}
+display:none;
+}
+#{{ id }} .ph-image2-{{ loop.index }} {
+{{ item.image2Css }}
+display:none;
+}
+#{{ id }} .ph-image1-{{ loop.index }} img {
+{{ item.image1SizeCss }}
+}
+#{{ id }} .ph-image2-{{ loop.index }} img {
+{{ item.image2SizeCss }}
+}
+{% endfor %}
+  
+
+#{{ id }} .swiper-container.ph-tmpl-swiper-container {
+width: 100%;
+{% if particle.fillRestPage == 'disable' %}
+height: {{particle.height|default('70vh')}};
+{% endif %}
+background: transparent;
+}
+    
+#{{ id }} .swiper-slide {}
+#{{ id }} .parallax-bg {
+position: absolute;
+left: 0;
+top: 0;
+width: 130%;
+height: 100%;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: center;
+background-image:url({{ url(particle.backgroundImage)|e }});
+{# gantry-theme://images/particles/bg.jpg #}
+}
+</style>
+{% endblock %}
+
+
+
+{% block javascript %}
+	{% do gantry.load('jquery') %}
+<script src="{{ gantry.phoca_theme.getParticleJsPath('swiper.min.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+
+jQuery( document ).ready(function() {
+
+	function phReset($elem) {
+    	$elem.before($elem.clone(true));
+    	var $newElem = $elem.prev();
+    	$elem.remove();
+    	return $newElem;
+	}
+
+	function phStartAnimation(item, aClass) {
+		var a = jQuery('.swiper-slide-active '+item);
+		var p = jQuery('.swiper-slide-prev '+item);
+		var n = jQuery('.swiper-slide-next '+item);
+		
+		a.removeClass(aClass);
+		a = phReset(a);
+		a.addClass(aClass);
+		a.show();
+		
+		p.hide();
+		n.hide();
+	}
+
+	var swiper = new Swiper('.ph-tmpl-swiper-container', {
+		speed: {{ particle.animationSpeed|default('600') }},
+	  	{% if particle.autoplay == 'enable' %}
+        autoplay: { delay: {{ particle.autoplaySpeed|default('10000') }} },
+        {% else %}
+        autoplay: false,
+        {% endif %}
+      	parallax: false,
+      	{% if particle.dots == 'enable' %}
+      	pagination: {
+        	el: '.swiper-pagination',
+        	clickable: true,
+      	},
+      	{% endif %}
+      	{% if particle.nav == 'enable' %}
+      	navigation: {
+        	nextEl: '.swiper-button-next',
+        	prevEl: '.swiper-button-prev',
+      	},
+      	{% endif %}
+    });
+
+	{% if particle.fillRestPage == 'enable' %}
+        var phSwiperTop 		= jQuery('.swiper-container').position().top;
+        var phSwiperWidth		= jQuery('.swiper-container').width();
+        var phWindowHeight		= jQuery(window).height();
+        var phRestPageHeight	= phWindowHeight - phSwiperTop;
+        if (phSwiperWidth < phRestPageHeight) {
+    		phRestPageHeight = phSwiperWidth/{{ particle.fillRestPageRatio|default('2') }};
+        }
+        jQuery('.swiper-container.ph-tmpl-swiper-container').height(phRestPageHeight);
+    {% endif %}
+
+	/* Start animation of items when transition of slide ends*/
+	swiper.on('transitionEnd', function () {
+		{% for item in particle.items %}
+        phStartAnimation('.ph-title-{{ loop.index }}', 'animated {{ item.titleAnimation}}');
+        phStartAnimation('.ph-description-{{ loop.index }}', 'animated {{ item.descAnimation}}');
+        phStartAnimation('.ph-image1-{{ loop.index }}', 'animated {{ item.image1Animation}}');
+        phStartAnimation('.ph-button-{{ loop.index }}', 'animated {{ item.buttonAnimation}}');
+        phStartAnimation('.ph-image2-{{ loop.index }}', 'animated {{ item.image2Animation}}');
+		{% endfor %}
+	});
+	
+	// Start animation of items at start of slideshow */
+	{% for item in particle.items %}
+	phStartAnimation('.ph-title-{{ loop.index }}', 'animated {{ item.titleAnimation}}');
+	phStartAnimation('.ph-description-{{ loop.index }}', 'animated {{ item.descAnimation}}');
+	phStartAnimation('.ph-image1-{{ loop.index }}', 'animated {{ item.image1Animation}}');
+	phStartAnimation('.ph-button-{{ loop.index }}', 'animated {{ item.buttonAnimation}}');
+	phStartAnimation('.ph-image2-{{ loop.index }}', 'animated {{ item.image2Animation}}');
+	{% endfor %}
+});
+</script>
+{% endblock %}
+
+
+
+{% block particle %}
+<div class="{{ particle.class|e }}" id="{{ id }}">
+  <div class="swiper-container ph-tmpl-swiper-container">
+    <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+    	{% for item in particle.items %}
+    	
+    	
+<div class="swiper-slide ph-swiper-slide-box-{{ loop.index }}">
+	{% if item.title %}<div class="ph-title-{{ loop.index }}" data-swiper-parallax="-300">{{ item.title }}</div>{% endif %}
+	{% if item.desc %}<div class="ph-description-{{ loop.index }}" data-swiper-parallax="-300">{{ item.desc|raw }}</div>{% endif %}
+	{# <div class="ph-box" data-swiper-parallax="-300">&nbsp;</div> #}
+	{% if item.image1 %}<div class="ph-image1-{{ loop.index }}" data-swiper-parallax="-100"><img src="{{ url(item.image1)|e }}" alt="" /></div>{% endif %}
+	{% if item.buttonTitle %}
+		{% if item.buttonLink %}<a href="{{ item.buttonLink }}">{% endif %}
+		<div class="ph-button-{{ loop.index }}" data-swiper-parallax="-100"><div class="ph-button-text ph-button-text-{{ loop.index }}">{{ item.buttonTitle }}</div></div>
+		{% if item.buttonLink %}</a>{% endif %}
+	{% endif %}
+	{% if item.image2 %}<div class="ph-image2-{{ loop.index }}" data-swiper-parallax="-100"><img src="{{ url(item.image2)|e }}" alt="" /></div>{% endif %}
+</div>
+	    {% endfor %}
+      
+
+    </div>
+    {% if particle.dots == 'enable' %}
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    {% endif %}}
+    {% if particle.nav == 'enable' %}
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    {% endif %}}
+  </div>
+</div>
+{% endblock %}

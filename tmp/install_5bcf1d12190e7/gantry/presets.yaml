@@ -1,0 +1,180 @@
+preset1:
+  image: 'gantry-admin://images/preset1.png'
+  description: GANTRY5_PLATFORM_PRESET1
+  colors:
+    - '#ffffff'
+    - '#565656'
+    - '#76323f'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#565656'
+    accent:
+      color-1: '#76323f'
+      color-2: '#d7cec7'
+      button-default: '#5c2018'
+      button-success: '#76323f'
+      button-danger: '#bc4639'
+      button-primary: '#d4a59a'
+      button-secondary: '#c58576'
+      button-info: '#4285f4'
+      button-warning: '#d96c00'
+      soft-subtle: '#f7f7f7'
+    header:
+      background: '#d7cec7'
+      text-color: '#565656'
+    navigation:
+      background: '#565656'
+      text-color: '#ffffff'
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    showcase:
+      background: '#565656'
+      text-color: '#ffffff'
+    maintop:
+      background: '#ffffff'
+      text-color: '#565656'
+    main:
+      background: '#ffffff'
+      text-color: '#565656'
+    mainbottom:
+      background: '#ffffff'
+      text-color: '#565656'
+    bottom:
+      background: '#ffffff'
+      text-color: '#565656'
+    utility:
+      background: '#565656'
+      text-color: '#ffffff'
+    feature:
+      background: '#ffffff'
+      text-color: '#565656'
+    subfeature:
+      background: '#ffffff'
+      text-color: '#565656'
+    footer:
+      background: '#565656'
+      text-color: '#ffffff'
+    offcanvas:
+      background: '#76323f'
+      text-color: '#ffffff'
+preset2:
+  image: 'gantry-admin://images/preset2.png'
+  description: GANTRY5_PLATFORM_PRESET2
+  colors:
+    - '#ffffff'
+    - '#565656'
+    - '#bc986a'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#565656'
+    accent:
+      color-1: '#bc986a'
+      color-2: '#daad86'
+      button-default: '#bc986a'
+      button-success: '#8d8841'
+      button-danger: '#daad86'
+      button-primary: '#659dbd'
+      button-secondary: '#5088a8'
+      button-info: '#4285f4'
+      button-warning: '#d96c00'
+      soft-subtle: '#f7f7f7'
+    header:
+      background: '#bc986a'
+      text-color: '#565656'
+    navigation:
+      background: '#565656'
+      text-color: '#ffffff'
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    showcase:
+      background: '#565656'
+      text-color: '#ffffff'
+    maintop:
+      background: '#ffffff'
+      text-color: '#565656'
+    main:
+      background: '#ffffff'
+      text-color: '#565656'
+    mainbottom:
+      background: '#ffffff'
+      text-color: '#565656'
+    bottom:
+      background: '#ffffff'
+      text-color: '#565656'
+    utility:
+      background: '#565656'
+      text-color: '#ffffff'
+    feature:
+      background: '#ffffff'
+      text-color: '#565656'
+    subfeature:
+      background: '#ffffff'
+      text-color: '#565656'
+    footer:
+      background: '#565656'
+      text-color: '#ffffff'
+    offcanvas:
+      background: '#bc986a'
+      text-color: '#ffffff'
+preset3:
+  image: 'gantry-admin://images/preset3.png'
+  description: GANTRY5_PLATFORM_PRESET3
+  colors:
+    - '#ffffff'
+    - '#565656'
+    - '#76323f'
+
+  styles:
+    base:
+      background: '#ffffff'
+      text-color: '#565656'
+    accent:
+      color-1: '#c27c8e'
+      color-2: '#e3e2df'
+      button-default: '#9a1750'
+      button-success: '#ee4c7c'
+      button-danger: '#5d001e'
+      button-primary: '#e3afbc'
+      button-secondary: '#c27c8e'
+      button-info: '#7aaac2'
+      button-warning: '#f2b277'
+      soft-subtle: '#f7f7f7'
+    header:
+      background: '#e3e2df'
+      text-color: '#565656'
+    navigation:
+      background: '#565656'
+      text-color: '#ffffff'
+      overlay: 'rgba(0, 0, 0, 0.4)'
+    showcase:
+      background: '#565656'
+      text-color: '#ffffff'
+    maintop:
+      background: '#ffffff'
+      text-color: '#565656'
+    main:
+      background: '#ffffff'
+      text-color: '#565656'
+    mainbottom:
+      background: '#ffffff'
+      text-color: '#565656'
+    bottom:
+      background: '#ffffff'
+      text-color: '#565656'
+    utility:
+      background: '#565656'
+      text-color: '#ffffff'
+    feature:
+      background: '#ffffff'
+      text-color: '#565656'
+    subfeature:
+      background: '#ffffff'
+      text-color: '#565656'
+    footer:
+      background: '#565656'
+      text-color: '#ffffff'
+    offcanvas:
+      background: '#5d001e'
+      text-color: '#ffffff'

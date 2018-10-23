@@ -1,0 +1,15 @@
+name: Header Colors
+description: Header colors for the Premiere theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#d7cec7"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#565656"

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install method="upgrade" type="component" version="1.5.0">
+	<name>PhocaInstall</name>
+	<creationDate>23/10/2010</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail></authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Phoca Install</description>
+	
+	<installfile>install.phocainstall.php</installfile>
+	<uninstallfile>uninstall.phocainstall.php</uninstallfile>
+	
+	<!-- || 1 || INSTRUCTIONS - Write your instructions here -->
+	<pinstructions><![CDATA[<h1>Instructions</h1><p>Write Instructions here</p>]]></pinstructions>
+	<!-- || 1 || END INSTRUCTIONS -->
+	
+	<!-- || 2 || SQL QUERY Write your SQL queries here -->
+	<psql><![CDATA[SELECT title FROM #__content WHERE id = 1]]></psql>
+	<!-- || 2 || END SQL QUERY -->
+	
+
+	<administration>
+		<menu img="components/com_phocainstall/assets/images/icon-16-pi-menu.png" link="option=com_phocainstall">Phoca Install</menu>
+
+		<files>
+			<!-- || 3 || FILES - Write your files here - such files will be copied
+								 from "installfiles" folder to destination written
+								 after the "installfiles" folder e.g.
+								 FROM:
+								 installfiles/administrator/com_phocainstall/test.txt
+								 TO:
+								 administrator/com_phocainstall/test.txt
+								 
+								 Files needs to be included in ZIP package in "installfiles" folder
+								-->
+			<filename>installfiles/administrator/components/com_phocainstall/test.txt</filename>
+			<!-- || 3 || END FILES -->
+			
+			<!-- Don't remove these files - these are the main files of installation process -->
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>install.phocainstall.php</filename>
+			<filename>install.sql</filename>
+			<filename>phocainstall.php</filename>
+			<filename>phocainstall.xml</filename>
+			<filename>uninstall.phocainstall.php</filename>
+			<filename>uninstall.sql</filename>
+			<filename>assets/images/icon-16-pi-menu.png</filename>
+			<filename>assets/images/icon-48-pi-install.png</filename>
+			<filename>assets/images/icon-logo-product.png</filename>
+			<filename>assets/images/icon-logo-seal.png</filename>
+			<filename>assets/images/index.html</filename>
+			<filename>assets/index.html</filename>
+			<filename>assets/phocainstall.css</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/phocainstallinstall.php</filename>
+			<filename>help/en-gb/index.html</filename>
+			<filename>help/en-gb/logo-phoca.png</filename>
+			<filename>help/en-gb/screen.phocainstall.html</filename>
+			<filename>help/index.html</filename>
+			<filename>helpers/index.html</filename>
+			<filename>helpers/phocainstall.php</filename>
+			<filename>views/index.html</filename>
+			<filename>views/phocainstallcp/index.html</filename>
+			<filename>views/phocainstallcp/tmpl/default.php</filename>
+			<filename>views/phocainstallcp/tmpl/index.html</filename>
+			<filename>views/phocainstallcp/view.html.php</filename>
+		</files>
+	</administration>
+</install>

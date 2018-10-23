@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="plugin" version="1.5" group="system">
+    <name>plg_system_vmmagicslideshow</name>
+    <creationDate>2015-04-09</creationDate>
+    <author>www.magictoolbox.com</author>
+    <authorEmail>support@magictoolbox.com</authorEmail>
+    <authorUrl>http://www.magictoolbox.com</authorUrl>
+    <copyright>Copyright (C) 2013 Magic Toolbox. All rights reserved.</copyright>
+    <license>http://www.magictoolbox.com/license</license>
+    <version>4.9.6</version>
+    <releaseDate>2018-09-07</releaseDate>
+    <description>PLG_SYSTEM_VMMAGICSLIDESHOW_DESCRIPTION</description>
+    <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.plg_system_vmmagicslideshow.ini</language>
+        <language tag="en-GB">en-GB.plg_system_vmmagicslideshow.sys.ini</language>
+    </languages>
+    <media folder="media" destination="plg_system_vmmagicslideshow">
+        <filename>graphics/index.html</filename>
+        <filename>magicslideshow.css</filename>
+        <filename>magicslideshow.js</filename>
+        <filename>magicslideshow.module.css</filename>
+        <filename>product.js</filename>
+        <filename>utils.js</filename>
+    </media>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>vmmagicslideshow/classes/index.html</filename>
+        <filename>vmmagicslideshow/classes/magicslideshow.module.core.class.php</filename>
+        <filename>vmmagicslideshow/classes/magictoolbox.imagehelper.class.php</filename>
+        <filename>vmmagicslideshow/classes/magictoolbox.params.class.php</filename>
+        <filename>vmmagicslideshow/templates/index.html</filename>
+        <filename plugin="vmmagicslideshow">vmmagicslideshow.php</filename>
+    </files>
+</install>

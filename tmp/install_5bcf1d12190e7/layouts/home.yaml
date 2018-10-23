@@ -1,0 +1,212 @@
+version: 2
+
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+
+layout:
+  /header/: {}
+  /navigation/: {}
+  /showcase/:
+    - phoca-carousel
+  /maintop/: {}
+  /main/:
+    - system-messages
+    - sample-1
+  /mainbottom/: {}
+  /bottom/:
+    - contentcubes
+  /utility/:
+    - contenttabs
+  /feature/:
+    - custom
+  /subfeature/:
+    - sample-2
+  /footer/: {}
+  /offcanvas/: {}
+
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  navigation:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  showcase:
+    attributes:
+      boxed: ''
+      class: g-flushed
+  maintop:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  mainbottom:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  bottom:
+    attributes:
+      boxed: ''
+      class: g-flushed    
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children      
+
+content:
+  phoca-carousel:
+    title: 'Phoca Carousel'
+    attributes:
+      animationSpeed: '600'
+      autoplay: enable
+      autoplaySpeed: ''
+      nav: enable
+      dots: enable
+      height: 100vh
+      fillRestPage: enable
+      backgroundImage: 'gantry-theme://images/particles/bg.jpg'
+      items:
+        -
+          backgroundImage: 'gantry-theme://images/particles/bg.jpg'
+          title: 'New Arrivals'
+          titleCss: "animation-duration: 5s;\nanimation-delay: 0s;\nposition: absolute;\nleft: 26%;\ntop: 15%;\nfont-size: 4vw;\nz-index: 1000;\ntext-align: center;\ncolor: #fff;\nfont-weight: bold;\n"
+          titleAnimation: fadeIn
+          desc: '<div style="text-align:center">Sale up to<br /><span style="color: #f0055b">50% Off</span></div>'
+          descCss: "animation-duration: 6s;\nanimation-delay: 3s;\nposition: absolute;\nleft: 29%;\ntop: 28%;\nz-index: 1000;\n\npadding: 1vw;\nfont-size: 3vw;\nline-height: 1.3;\ncolor: #fff;"
+          descAnimation: fadeIn
+          buttonTitle: 'View Collections'
+          buttonLink: 'https://www.phoca.cz/'
+          buttonCss: "animation-duration: 1s;\nanimation-delay: 4s;\nposition: absolute;\nbottom: 25%;\npadding: 9vw auto;\nborder: 4px solid #DAA520;\ncolor: #DAA520;\nmargin-left: auto;\nmargin-right: auto;\nleft: 0;\nright: 0;\ntext-align: center;\nz-index: 1001;\nwidth: 20vw;\nfont-size: 2vw;\ntext-transform: uppercase;\nwhite-space: nowrap;\nbackground: rgba(0,0,0,0.1);"
+          buttonAnimation: zoomIn
+          image1: 'gantry-theme://images/particles/shoes.png'
+          image1Css: "animation-duration: 2s;\nanimation-delay: 2s;\nposition: absolute;\nbottom: 20%;\nleft: 7%;\nz-index: 1002;"
+          image1SizeCss: "height: 20vw;\nwidth: auto;"
+          image1Animation: bounceInUp
+          image2: ''
+          image2Css: "animation-duration: 1s;\nanimation-delay: 3s;\nposition: absolute;\nbottom: 0%;\nright: 10%;\nz-index: 1003;"
+          image2SizeCss: "height: 34vw;\nwidth: auto;"
+          image2Animation: fadeIn
+          name: '001'
+        -
+          backgroundImage: 'gantry-theme://images/particles/bg2.jpg'
+          title: 'New Collections'
+          titleCss: "animation-duration: 5s;\nanimation-delay: 0s;\nposition: absolute;\nmargin-left: auto;\nmargin-right: auto;\nleft: 0;\nright: 0;\ntop: 5%;\nfont-size: 5.4vw;\nz-index: 1000;\ntext-align: center;\ncolor: #fff;\nfont-weight: bold;"
+          titleAnimation: fadeIn
+          desc: 'Discover now Latest Collection'
+          descCss: "animation-duration: 6s;\nanimation-delay: 1s;\nposition: absolute;\nright: 50%;\ntop: 30%;\nz-index: 1000;\npadding: 1vw;\nfont-size: 3vw;\nline-height: 1;\ncolor: #f0055b;"
+          descAnimation: bounceInLeft
+          buttonTitle: 'View Collections'
+          buttonLink: 'http://www.phoca.cz'
+          buttonCss: "animation-duration: 1s;\nanimation-delay: 4s;\nposition: absolute;\nbottom: 20%;\npadding: 7vw auto;\nborder: 4px solid #c5c5c5;\ncolor: #c5c5c5;\nmargin-left: auto;\nmargin-right: auto;\nleft: 0;\nright: 0;\ntext-align: center;\nz-index: 1001;\nwidth: 20vw;\nfont-size: 2vw;\ntext-transform: uppercase;\nwhite-space: nowrap;\nbackground: rgba(0,0,0,0.1);"
+          buttonAnimation: zoomIn
+          image1: 'gantry-theme://images/particles/shoes2.png'
+          image1Css: "animation-duration: 2s;\nanimation-delay: 2s;\nposition: absolute;\nbottom: 5%;\nleft: 10%;\nz-index: 1002;"
+          image1SizeCss: "height: 16vw;\nwidth: auto;"
+          image1Animation: bounceInDown
+          image2: ''
+          image2Css: "animation-duration: 1s;\nanimation-delay: 3s;\nposition: absolute;\nbottom: 0%;\nright: 10%;\nz-index: 1003;"
+          image2SizeCss: "height: 36vw;\nwidth: auto;"
+          image2Animation: fadeIn
+          name: '002'
+  sample-1:
+    title: 'Getting Started'
+    attributes:
+      description: "<h1 class=\"center\">Phoca Premiere</h1>\n<div class=\"device-promo\"><div class=\"macbook\"><div class=\"macbook-color\"></div></div><div class=\"ipad\"><div class=\"ipad-color\"></div></div><div class=\"iphone\"><div class=\"iphone-color\"></div></div></div><p>Welcome to <strong>Phoca Premiere</strong>, a <strong>Joomla!</strong> CMS template built on the <strong>Gantry 5</strong> framework. <strong>Phoca Premiere</strong> provides support for <strong>Phoca Cart</strong> - e-commerce extension.</p>\n\n<p><strong>Phoca Cart</strong> is an user-friendly e-commerce extension for Joomla! CMS. It is a complex shopping cart, built on Joomla! and its framework. It is fully integrated into latest <strong>Joomla!</strong> system (no bridge, no unnecessary code instructions for obsolete <strong>Joomla!</strong> versions). It is designed by modern Bootstrap library. This means that your e-shop will have responsive design and will be displayed in all devices like desktop, notebook, mobile phone or tablet. With help of <strong>Phoca Cart</strong> you can sell real products or digital downloads. <strong>Phoca Cart</strong> can be also used as catalogue, gallery or download extension.</p>\n\n<p><strong>Phoca Cart</strong> can be easily extended by:</p><ul><li>Modules (brands, cart, category, comparison, currency, filter, product, product scroller, search, wish list, ...)</li>\n<li>Plugins (payment, shipping and custom plugins)</li>\n<li><strong>Joomla!</strong> extensions (PDF documents created by <strong>Phoca PDF</strong> extension)</li>\n<li>Templates (standard <strong>Joomla!</strong> templates).</li>\n</ul>\n\n<div class=\"info-box\"><div class=\"phf ph-phocacart-l float-left\"></div><p>You can download <strong>Phoca Cart</strong> for free. Get more information on <strong>Phoca Cart</strong> website.</p>\n\n<p><a href=\"https://www.phoca.cz/phocacart\" class=\"button\">Learn More</a></p></div>\n\n<h1 class=\"center\">Get More Information</h1>\n\n<div class=\"g-grid\">\n<div class=\"g-block size-37\"><p>For more information on using <strong>Phoca Premiere</strong> template or Phoca extensions, see documentation.</p>\n<p><a href=\"https://www.phoca.cz/documentation\" class=\"button\">Documentation</a></p>\n</div>\n<div class=\"g-block size-26 middle\"><div class=\"phf ph-phocaseal-l phf-xl\"></div></div>\n\n<div class=\"g-block size-37\"><p>If you have any questions regarding Phoca Premiere template or Phoca extensions, please ask a question in Phoca forum page.</p>\n<p><a href=\"https://www.phoca.cz/forum\" class=\"button\">Forum</a></p>\n</div>\n</div>\n\n<p style=\"text-align:center\">Once again, thank you for using Phoca Premiere template.</p>"
+  contentcubes:
+    title: 'Content Cubes'
+    attributes:
+      items:
+        -
+          image: 'gantry-theme://images/particles/001.jpg'
+          imageposition: left
+          label: 'Women Fashion'
+          title: 'Browse our website for the hottest dresses in the marketplace now.'
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: '001'
+        -
+          image: 'gantry-theme://images/particles/002.jpg'
+          imageposition: right
+          label: 'Trendy Clothing'
+          title: 'Discover now latest collection.'
+          tags: {  }
+          link: ''
+          linktext: '&rarr;'
+          buttonclass: ''
+          buttontarget: _self
+          name: '002'
+  contenttabs:
+    title: 'Content Tabs'
+    attributes:
+      title: 'Phoca Extensions'
+      animation: fade
+      items:
+        -
+          content: 'Phoca Cart is a complex e-commerce solution for Joomla! CMS. It extends Joomla! with rich e-commerce features like shopping cart, invoicing or POS function.'
+          title: 'Phoca Cart'
+        -
+          content: 'Phoca Gallery is an image gallery for Joomla! CMS. It includes component, modules and plugins. It helps users to display images or videos on website with different display styles.'
+          title: 'Phoca Gallery'
+        -
+          content: 'Phoca Download is a download manager for Joomla! CMS. It includes component, modules and plugins. It helps users to easily add files to the website. Such files can be downloaded or previewed by website visitiors.'
+          title: 'Phoca Download'
+        -
+          content: 'Phoca Restaurant Menu is a Joomla! CMS component. It helps users to create menus for restaurant, cafeteria, fast food, school canteen, buffet, wineroom, etc. Menus can be displayed on a website, printed or emailed to customers.'
+          title: 'Phoca Restaurant Menu'
+  custom:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"fp-features\">\n    <div class=\"g-grid\">\n        <div class=\"g-block size-33-3\">\n            <div class=\"card\">\n                <div class=\"card-block\">\n                    <i class=\"phf ph-joomla-br50\"></i>\n                    <h4 class=\"card-title\">Joomla!</h4>\n                    <p class=\"card-text\">Joomla! is an award-winning content management system (CMS), which enables you to build websites and powerful online applications.</p>\n                </div>\n            </div>\n        </div>\n        <div class=\"g-block size-33-3\">\n            <div class=\"card\">\n                <div class=\"card-block\">\n                    <i class=\"phf ph-gantry\"></i>\n                    <h4 class=\"card-title\">Gantry</h4>\n                    <p class=\"card-text\">Next Generation Theme Framework.\nDevelop CMS themes quickly and efficiently while providing flexibility and ease-of-use for end-users.</p>\n                </div>\n            </div>\n        </div>\n        <div class=\"g-block size-33-3\">\n            <div class=\"card\">\n                <div class=\"card-block\">\n                    <i class=\"phf ph-phocacart-br50\"></i>\n                    <h4 class=\"card-title\">Phoca Cart</h4>\n                    <p class=\"card-text\">Phoca Cart is a powerful e-commerce extension for Joomla! CMS. Phoca Cart is based on Joomla! framework and it is designed by Bootstrap.</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+  sample-2:
+    title: 'Sample Content'
+    attributes:
+      image: 'gantry-media://particles/logo-phoca-cart-bw.png'
+      headline: ''
+      description: '<p>Phoca Cart is e-commerce extension - powerful shopping cart for Joomla! CMS. Phoca Cart is based on Joomla! framework and it is designed by modern responsive Bootstrap library.</p>'
+      link: ''
+      linktext: ''
+      samples:
+        -
+          icon: 'fa fa-shopping-cart'
+          subtitle: ''
+          description: '<p>Shopping cart allows your website visitors to easily select and purchase goods or services on your website online.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Shopping Cart'
+        -
+          icon: 'fa fa-file-text'
+          subtitle: ''
+          description: '<p>Create and automatically send professional looking PDF or HTML invoices to your customer.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: Invoicing
+        -
+          icon: 'fa fa-barcode'
+          subtitle: ''
+          description: '<p>Use one system for online and brick and mortar store. POS will help you to serve customers in your brick and mortar store.</p>'
+          id: ''
+          class: ''
+          variations: ''
+          title: 'Point of Sale'

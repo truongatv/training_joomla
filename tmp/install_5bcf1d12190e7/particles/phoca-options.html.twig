@@ -1,0 +1,26 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block stylesheets %}
+	{# {% if particle.phoca_load_bootstrap_full_css %}
+<link rel="stylesheet" href="{{ gantry.phoca_theme.getBootstrapPath('css/bootstrap.min.css') }}" type="text/css" />
+	{% endif %}
+	{% if particle.phoca_load_bootstrap_base_css %}
+<link rel="stylesheet" href="{{ gantry.phoca_theme.getBootstrapPath('css/bootstrap.base.min.css') }}" type="text/css" />
+	{% endif %}
+	{% if particle.phoca_load_bootstrap_glyphicons_css %}
+<link rel="stylesheet" href="{{ gantry.phoca_theme.getBootstrapPath('css/bootstrap.glyphicons.min.css') }}" type="text/css" />
+	{% endif %} #}
+	{% if particle.phoca_sticky_navbar %}
+<link rel="stylesheet" href="{{ gantry.phoca_theme.getOptionScssPath('phoca_sticky_navbar.scss') }}" type="text/css" />
+	{% endif %}
+{% endblock %}
+
+{% block javascript %}
+	{% do gantry.load('jquery') %}
+	{# {% if particle.phoca_load_bootstrap_base_js %}	
+<script src="{{ gantry.phoca_theme.getBootstrapPath('js/bootstrap.min.js') }}" type="text/javascript"></script>
+	{% endif %} #}
+	{% if particle.phoca_sticky_navbar %}	
+<script src="{{ gantry.phoca_theme.getOptionJsPath('phoca.sticky.navbar.js') }}" type="text/javascript"></script>
+	{% endif %}
+{% endblock %}

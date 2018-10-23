@@ -1,0 +1,15 @@
+name: Subfeature Colors
+description: Subfeature colors for the Premiere theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#ffffff"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#565656"

@@ -1,0 +1,27 @@
+#g-footer {
+	background: $footer-background;
+	color: $footer-text-color;
+	border-top: 1px solid rgba(0,0,0,0.05);
+	@include breakpoint(mobile-only) {
+		text-align: center;
+	}
+}
+
+#g-footer a{
+	color: lighten($accent-color-1, 22%);
+}
+
+#g-footer .disclaimer{
+	color: darken($footer-text-color, 50%);
+	line-height: 1;
+	font-size: small;
+	text-align: left;
+	margin: 0 auto;
+}
+
+@media print {
+	#g-footer {
+		background: #fff !important;
+		color: #000 !important;
+	}
+}

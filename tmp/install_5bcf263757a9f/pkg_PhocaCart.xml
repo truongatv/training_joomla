@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3" method="upgrade">
+<name>Phoca Cart Package</name>
+<author>Jan Pavelka (www.phoca.cz)</author>
+<creationDate>05/10/2018</creationDate>
+<packagename>PhocaCart</packagename>
+<license>GNU/GPL</license>
+<version>3.1.3</version>
+<url>http://www.phoca.cz/</url>
+<description><![CDATA[<hr /><div style="text-align:left; width: 100%;"><img style="float:right" src="../media/com_phocacart/images/administrator/logo-phoca.png" />
+<img src="../media/com_phocacart/images/administrator/logo.png" /><br />
+<h1>Phoca Cart package</h1>
+<div>(includes Phoca Cart component and Phoca Cart plugins)</div>
+<ul>
+<li>Phoca Cart component installed.</li>
+<li>Phoca Cart Payment - Cash On Delivery plugin installed</li>
+<li>Phoca Cart Payment - Paypal Standard plugin installed</li>
+<li>Phoca Cart Payment - POS Cash plugin installed</li>
+<li>Phoca Cart Shipping - Shipping Standard plugin installed</li>
+<li>Phoca Cart View - Default plugin installed</li>
+</ul>
+<div>Go to <a style="text-decoration:underline" href="index.php?option=com_phocacart"><b>Phoca Cart component</b></a></div>
+<p>&nbsp;</p></div><hr />]]></description>
+<!--<scriptfile>install/script.php</scriptfile>-->
+<files folder="packages">
+	<file type="plugin" id="PhocaCart" group="pcp">plg_pcp_cash_on_delivery_v3.1.3.zip</file>
+	<file type="plugin" id="PhocaCart" group="pcp">plg_pcp_paypal_standard_v3.1.3.zip</file>
+	<file type="plugin" id="PhocaCart" group="pcp">plg_pcp_pos_cash_v3.1.3.zip</file>
+	<file type="plugin" id="PhocaCart" group="pcs">plg_pcs_shipping_standard_v3.1.3.zip</file>
+	<file type="plugin" id="PhocaCart" group="pcv">plg_pcv_default_v3.1.3.zip</file>
+	<file type="component" id="PhocaCart" >com_phocacart_v3.1.3.zip</file>
+</files>
+</extension>

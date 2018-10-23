@@ -1,0 +1,13 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    title: 'Phoca Options'
+    type: phoca-options
+    attributes:
+      enabled: true
+      phoca_sticky_navbar: false
+      phoca_load_bootstrap_base_css: true
+      phoca_load_bootstrap_glyphicons_css: true
+      phoca_load_bootstrap_base_js: true
+      phoca_load_bootstrap_full_css: false

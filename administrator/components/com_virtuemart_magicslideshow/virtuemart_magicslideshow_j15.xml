@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5" method="upgrade" client="administrator">
+    <name>virtuemart_magicslideshow</name>
+    <creationDate>2013-04-25</creationDate>
+    <author>www.magictoolbox.com</author>
+    <authorEmail>support@magictoolbox.com</authorEmail>
+    <authorUrl>http://www.magictoolbox.com</authorUrl>
+    <copyright>Copyright (C) 2013 Magic Toolbox. All rights reserved.</copyright>
+    <license>http://www.magictoolbox.com/license</license>
+    <version>4.9.6</version>
+    <releaseDate>2018-09-07</releaseDate>
+    <description>Magic Slideshow for VirtueMart Component</description>
+    <install>
+        <sql>
+            <file driver="mysql">sql/install.mysql.sql</file>
+            <file driver="mysql" charset="utf8">sql/install.mysql.sql</file>
+            <file driver="mysqli">sql/install.mysql.sql</file>
+            <file driver="mysqli" charset="utf8">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql">sql/uninstall.mysql.sql</file>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.sql</file>
+            <file driver="mysqli">sql/uninstall.mysql.sql</file>
+            <file driver="mysqli" charset="utf8">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+    <installfile>virtuemart_magicslideshow_installer.php</installfile>
+    <uninstallfile>virtuemart_magicslideshow_installer.php</uninstallfile>
+    <media folder="media" destination="com_virtuemart_magicslideshow">
+        <filename>backend.css</filename>
+        <filename>images/bottom.gif</filename>
+        <filename>images/icon-16-magicslideshow.png</filename>
+        <filename>images/icon-48-magicslideshow.png</filename>
+        <filename>images/left.gif</filename>
+        <filename>images/logo.gif</filename>
+        <filename>images/no.gif</filename>
+        <filename>images/right.gif</filename>
+        <filename>images/settings.gif</filename>
+        <filename>images/top.gif</filename>
+        <filename>images/yes.gif</filename>
+        <filename>options.js</filename>
+    </media>
+    <administration>
+        <menu img="../media/com_virtuemart_magicslideshow/images/icon-16-magicslideshow.png" link="option=com_virtuemart_magicslideshow">virtuemart_magicslideshow_menu</menu>
+        <files folder="admin">
+            <filename>controller.php</filename>
+            <filename>helpers/helper.php</filename>
+            <filename>helpers/index.html</filename>
+            <filename>index.html</filename>
+            <filename>sql/index.html</filename>
+            <filename>sql/install.mysql.sql</filename>
+            <filename>sql/uninstall.mysql.sql</filename>
+            <filename>views/default/index.html</filename>
+            <filename>views/default/tmpl/default.php</filename>
+            <filename>views/default/tmpl/default_edit.php</filename>
+            <filename>views/default/tmpl/index.html</filename>
+            <filename>views/default/view.html.php</filename>
+            <filename>views/index.html</filename>
+            <filename>virtuemart_magicslideshow.php</filename>
+            <filename>virtuemart_plugin/index.html</filename>
+            <filename>virtuemart_plugin/language/en-GB/en-GB.plg_system_vmmagicslideshow.ini</filename>
+            <filename>virtuemart_plugin/language/en-GB/en-GB.plg_system_vmmagicslideshow.sys.ini</filename>
+            <filename>virtuemart_plugin/media/graphics/index.html</filename>
+            <filename>virtuemart_plugin/media/magicslideshow.css</filename>
+            <filename>virtuemart_plugin/media/magicslideshow.js</filename>
+            <filename>virtuemart_plugin/media/magicslideshow.module.css</filename>
+            <filename>virtuemart_plugin/media/product.js</filename>
+            <filename>virtuemart_plugin/media/utils.js</filename>
+            <filename>virtuemart_plugin/site/index.html</filename>
+            <filename>virtuemart_plugin/site/vmmagicslideshow/classes/index.html</filename>
+            <filename>virtuemart_plugin/site/vmmagicslideshow/classes/magicslideshow.module.core.class.php</filename>
+            <filename>virtuemart_plugin/site/vmmagicslideshow/classes/magictoolbox.imagehelper.class.php</filename>
+            <filename>virtuemart_plugin/site/vmmagicslideshow/classes/magictoolbox.params.class.php</filename>
+            <filename>virtuemart_plugin/site/vmmagicslideshow/templates/index.html</filename>
+            <filename>virtuemart_plugin/site/vmmagicslideshow.php</filename>
+            <filename>virtuemart_plugin/vmmagicslideshow.xml</filename>
+            <filename>virtuemart_plugin/vmmagicslideshow_j15.xml</filename>
+        </files>
+        <languages folder="language">
+            <language tag="en-GB">en-GB.com_virtuemart_magicslideshow.ini</language>
+            <language tag="en-GB">en-GB.com_virtuemart_magicslideshow.menu.ini</language>
+        </languages>
+    </administration>
+</install>

@@ -1,0 +1,46 @@
+name: Accent Colors
+description: Accent colors for the Premiere theme
+type: core
+
+form:
+  fields:
+    color-1:
+      type: input.colorpicker
+      label: Accent Color 1
+      default: "#76323f"
+    color-2:
+      type: input.colorpicker
+      label: Accent Color 2
+      default: "#bc4639"
+    button-default:
+      type: input.colorpicker
+      label: Button Default
+      default: "#76323f"
+    button-success:
+      type: input.colorpicker
+      label: Button Success
+      default: "#c09f80"
+    button-danger:
+      type: input.colorpicker
+      label: Button Danger
+      default: "#bc4639"
+    button-primary:
+      type: input.colorpicker
+      label: Button Primary
+      default: "#a67066"
+    button-secondary:
+      type: input.colorpicker
+      label: Button Secondary
+      default: "#91625b"
+    button-info:
+      type: input.colorpicker
+      label: Button Info
+      default: "#d7cec7"
+    button-warning:
+      type: input.colorpicker
+      label: Button Warning
+      default: "#d96c00"
+    soft-subtle:
+      type: input.colorpicker
+      label: Accent Soft Subtle
+      default: "#f7f7f7"

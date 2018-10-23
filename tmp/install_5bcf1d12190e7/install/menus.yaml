@@ -1,0 +1,9 @@
+premiere-theme:
+  title: 'Premiere Theme'
+  description: 'Sample menu for Premiere theme.'
+
+  items:
+    premiere:
+      title: 'Home'
+      outline: home
+      home: 1

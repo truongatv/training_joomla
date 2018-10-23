@@ -1,0 +1,41 @@
+version: 2
+
+preset:
+  image: gantry-admin://images/layouts/2-col-left.png
+
+layout:
+  /header/:
+    - [logo 30, position-header 70]
+
+  /navigation/:
+    - menu
+
+  /container-main/:
+    -
+      - sidebar 20:
+         - position-sidebar
+      - main 80:
+          - position-breadcrumbs
+          - system-messages
+          - system-content
+
+  /footer/: {}
+  /offcanvas/: {}
+
+structure:
+  sidebar:
+    subtype: aside
+    block:
+      fixed: 1
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children 

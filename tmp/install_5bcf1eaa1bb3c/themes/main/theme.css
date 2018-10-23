@@ -1,0 +1,183 @@
+/* Phoca.cz http://www.phoca.cz/ */
+
+body {
+	background: #f7f7f7;
+	color: #777;
+}
+
+.phoca-header {
+	background: #fff;
+}
+.navbar {
+	background: #000;
+	color: #fff;
+	border: 0px;
+	border-radius: 0px;
+}
+.navbar li a{
+	color: #fff;
+}
+
+h1 { font-size: 180%;}
+h2 { font-size: 160%}
+h3 { font-size: 140%}
+
+.img-thumbnail,
+.ph-thumbnail {
+	box-shadow: 0px 0px 3px 0px #ccc;
+}
+
+.caption h3 {
+	background: #f7f7f7;
+	text-align: center;
+	
+	margin: 10px -13px;
+	margin-top: 25px;
+	padding: 10px 0px;
+}
+
+.btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.input-group-btn .btn {
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+
+
+.btn, .ph-btn, .btn-sm {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.ph-tab-pane {
+	background: #fff;
+}
+
+.ph-price-brutto {
+	color: #286090;
+}
+
+.ph-cart-module-box {
+	
+}
+.ph-small {
+	font-size: 95%;
+}
+
+.ph-cart-module-box .ph-hr {
+	border-color: #777;
+}
+
+a, 
+a:hover,
+a:focus,
+a:visited {
+	color: #555;
+}
+
+.moduletable a, 
+.moduletable a:hover,
+.moduletable a:focus,
+.moduletable a:visited {
+	color: #fff;
+}
+
+.btn,
+a.btn, 
+a.btn:hover,
+a.btn:focus,
+a.btn:visited {
+	color: #fff;
+}
+
+.glyphicon-stats {
+	color: #4491E4;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #f0f0f0;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle,
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #000000;
+	background-color: #fff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #f0f0f0;
+}
+
+.breadcrumb {
+	background: #fff;
+}
+
+
+
+.btn-default {
+	background: #4491E4;
+	border-color: #4491E4;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+	background: #2D84E1;
+	border-color: #2D84E1;
+}
+
+.btn-success {
+	background: #339999;
+	border-color: #339999;
+}
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+	background: #2D8686;
+	border-color: #2D8686;
+}
+
+.btn-danger {
+	background: #E44644;
+	border-color: #E44644;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger {
+	background: #E1302D;
+	border-color: #E1302D;
+}
+
+.dropdown-menu {
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+.navbar-brand img {
+	max-width: 100%;
+	height: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*
+.col-md-6 {
+	width: 50%;
+}
+*/
+
+.ph-pagination {
+	margin-top: 30px;
+}
+/*
+#phQuickViewPopup .ph-image-full,
+#phQuickViewPopup .img-thumbnail .ph-image-full {
+	border: 0px;
+	box-shadow: none;
+}*/

@@ -1,0 +1,42 @@
+@import "dependencies";
+
+
+#g-page-surround {
+	
+}
+
+#g-navigation.ph-sticky {
+	position: fixed;
+	top: 0;
+	z-index: 10000001;
+	left: 0;
+	width: 100%;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#g-navigation {
+	
+
+}
+#g-main {
+	
+}
+
+/* fixed set as default from start to not jump */
+
+.g-offcanvas-toggle {
+	position: fixed;
+	z-index: 10000002;
+	background: transparent;
+}
+
+.g-offcanvas-toggle.ph-sticky {
+	position: fixed;
+	z-index: 10000002;
+	background: $navigation-background;
+}
+
+#g-navigation.ph-sticky,
+.g-offcanvas-toggle.ph-sticky {
+    @include transition(all 1s);
+}
