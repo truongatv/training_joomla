@@ -39,7 +39,7 @@ require_once( CLASSPATH . 'ps_product.php');
 $ps_product = new ps_product;
 
 
-$db =& new ps_DB;
+$db = new ps_DB;
 $q  = "SELECT DISTINCT product_sku FROM #__{vm}_product, #__{vm}_product_category_xref, #__{vm}_category WHERE ";
 $q .= "product_parent_id=''";
 $q .= "AND #__{vm}_product.product_id=#__{vm}_product_category_xref.product_id ";

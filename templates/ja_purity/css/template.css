@@ -1536,6 +1536,10 @@ h3.hide {
 	text-align: center;
 }
 
+#ja-banner > div > marquee > table{
+	margin-top: 10px;
+}
+
 div.back_button a,
 div.back_button a:hover,
 div.back_button a:active {
@@ -1652,5 +1656,9 @@ html {
 
 
 div > #vmMainPage p {
+	display: none;
+}
+
+.ja-usertools-font {
 	display: none;
 }
